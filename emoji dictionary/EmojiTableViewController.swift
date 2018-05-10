@@ -19,6 +19,13 @@ class EmojiTableViewController: UITableViewController
         
     }
     
+    override  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let emoji = emojis[indexPath.row];
+        performSegue(withIdentifier: "emojiDef", sender: emoji );
+        
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad();
@@ -31,5 +38,11 @@ class EmojiTableViewController: UITableViewController
         cell.textLabel?.text = emojis[indexPath.row];
 
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let emojiDef = segue.destination as! EmojiDefController;
+        emojiDef.emoji = sender as! String;
     }
 }

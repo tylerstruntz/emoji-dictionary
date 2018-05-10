@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325B12A520A13BEF00E205B6 /* EmojiDefController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325B12A420A13BEF00E205B6 /* EmojiDefController.swift */; };
 		3282CA1520A0024500206B0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3282CA1420A0024500206B0A /* AppDelegate.swift */; };
 		3282CA1A20A0024500206B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3282CA1820A0024500206B0A /* Main.storyboard */; };
 		3282CA1C20A0024600206B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3282CA1B20A0024600206B0A /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		325B12A420A13BEF00E205B6 /* EmojiDefController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDefController.swift; sourceTree = "<group>"; };
 		3282CA1120A0024500206B0A /* emoji dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "emoji dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3282CA1420A0024500206B0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3282CA1920A0024500206B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,10 +58,11 @@
 			children = (
 				3282CA1420A0024500206B0A /* AppDelegate.swift */,
 				3282CA2620A003D300206B0A /* EmojiTableViewController.swift */,
+				325B12A420A13BEF00E205B6 /* EmojiDefController.swift */,
 				3282CA1820A0024500206B0A /* Main.storyboard */,
 				3282CA1B20A0024600206B0A /* Assets.xcassets */,
-				3282CA1D20A0024600206B0A /* LaunchScreen.storyboard */,
 				3282CA2020A0024600206B0A /* Info.plist */,
+				3282CA1D20A0024600206B0A /* LaunchScreen.storyboard */,
 			);
 			path = "emoji dictionary";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				3282CA2720A003D300206B0A /* EmojiTableViewController.swift in Sources */,
 				3282CA1520A0024500206B0A /* AppDelegate.swift in Sources */,
+				325B12A520A13BEF00E205B6 /* EmojiDefController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

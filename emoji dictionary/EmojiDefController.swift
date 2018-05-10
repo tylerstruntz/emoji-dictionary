@@ -8,28 +8,32 @@
 
 import UIKit
 
-class EmojiDefController: UIViewController {
-
-    override func viewDidLoad() {
+class EmojiDefController: UIViewController
+{
+    @IBOutlet weak var emojiDefLabel: UILabel!
+    @IBOutlet weak var emojiLabel: UILabel!
+    var emoji = "";
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        emojiLabel.text = emoji;
+        
+        //["🔐","📋","🎡","🗿"]
+        if(emoji == "🗿")
+        {
+            emojiDefLabel.text = "A big old rock";
+        }
+        else if(emoji == "🎡")
+        {
+            emojiDefLabel.text = "A big ferris wheel";
+        }
+        else if(emoji == "📋")
+        {
+            emojiDefLabel.text = "A clipboard";
+        }
+        else if(emoji == "🔐")
+        {
+            emojiDefLabel.text = "A key and lock";
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
